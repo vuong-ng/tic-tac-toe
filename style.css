@@ -138,10 +138,61 @@ body {
     padding:.5rem .7rem;
     background:#eee;
     border-radius:50%;
+    text-align:center;
 }
 
 .highlight {
     border : 2px solid black;
     color:black;
     font-weight: 200;
+}
+
+input {
+    max-width:400px;
+}
+
+.flex {
+    /* display:flex;
+    align-self:flex-end; */
+    /* align-items:center; */
+    /* justify-content: space-around; */
+    /* gap: 20px; */
+    margin-left:auto;
+    margin-top: 10px;
+}
+
+.input {
+    display:flex;
+    flex-direction:row;
+    align-items: baseline;
+    gap:5px;
+    padding: .7em .8em;
+}
+
+.input-group {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.input-group input {
+    width:500px;
+    height:50px;
+    flex-wrap:wrap;
+    
+}
+
+.input-group p {
+    width:100px;
+    margin-right:auto;
+}
+
+.flex {
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    margin-top:auto;
+    align-items: baseline;
+    justify-content: space-between;
+
 }

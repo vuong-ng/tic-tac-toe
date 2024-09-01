@@ -16,26 +16,11 @@ function createGame() {
     console.log(Number(input.value));
     createBoard(sideLength, name1, name2);
     displayPlayers(name1, name2);
-    transformPlayer();
 }
 
 const displayPlayers = (name1, name2) => {
     board1.innerHTML = `${name1}: O`;
     board2.innerHTML = `${name2}: X`;
-}
-
-const transformPlayer = () => {
-    if (current === "O") {
-        if (board2.classList.contains("highlight")) {
-            board2.classList.remove("highlight");
-        }
-        board1.classList.add("highlight");
-    } else {
-        if (board1.classList.contains("highlight")) {
-            board1.classList.remove("highlight");
-        }
-        board2.classList.add("highlight");
-    }
 }
 
 function createPlayers(name1, name2) {
