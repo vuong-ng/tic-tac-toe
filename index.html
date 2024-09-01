@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- <h1>Tic-tac-toe game</h1> -->
+    <div class="main">
+        <div class="player-display">
+            <div class="info player-1-info"></div>
+            <div class=" info player-2-info"></div>
+        </div>
+        <div class="board"></div>
+        <button class="btn btn-open">Reset</button>
+    </div>
+    <section class="modal hidden">
+        <div class="flex">
+            <button class="btn-close">X</button>
+        </div>
+        <div>
+            <h3>Input your prefered side length</h3>
+        </div>
+        <input type="text" id="side-length" placeholder="Type in the size of your board length"/>
+        <input type="text" id="player-1-name" placeholder="Player 1's name">
+        <input type="text" id="player-2-name" placeholder="Player 2's name">
+        <button class="btn" id="submit-side-length">Submit</button>
+    </section>
+    <div class="overlay hidden"></div>
+    
+</body>
+</html>
